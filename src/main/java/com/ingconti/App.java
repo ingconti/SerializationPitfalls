@@ -1,18 +1,15 @@
-package org.example;
+package com.ingconti;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-
-/**
- * Hello world!
- */
 public class App {
 
     static Boolean FIRST_TOO = true;
-    static Boolean FIX_BUG = true;
+    static Boolean FIX_BUG = false;
+    //static Boolean FIX_BUG = true;
 
 
     public static void main(String[] args) {
@@ -33,7 +30,7 @@ public class App {
             if (FIX_BUG)
                 out.reset();
 
-            p.setFirstName("BAD!!!!!");
+            p.setFirstName("JANE");
             out.writeObject(p);
 
             out.close();

@@ -10,7 +10,7 @@ Person [firstName=John, lastName=Doe]
 
 and then:
 change name and send again:
-    p.setFirstName("BAD!!!!!");
+    p.setFirstName("Jane");
     out.writeObject(p);
 
 you WONT see the second value!
